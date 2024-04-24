@@ -1,0 +1,125 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: Arial, sans-serif; 
+  font-size: 120%;
+  background: #333;
+  background-image: url(/src/assets/Bg.jpg);
+  background-size: cover;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+}
+.weather-details{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.humidity{
+  margin-bottom: 5px;
+}
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #7c7c7c6b;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.quote-container {
+  border-left: 5px solid #24dd0b; /* Change color as needed */
+  padding-left: 15px;
+  margin-top: 20px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 16px; /* Change size as needed */
+  color: #fff; 
+  font-weight: 800;
+}
+
+.author {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 18px; /* Change size as needed */
+  color: #23e96f; /* Change color as needed */
+}
+
+/* for mobile */
+@media only screen and (max-width: 480px) {
+  .card {
+    padding: 1em; /* Adjust padding for mobile devices */
+  }
+  
+  .search-bar {
+    width: calc(100% - 80px); /* Adjust input width for mobile devices */
+  }
+}
+
+
+/* for tab */
+@media only screen and (max-width: 768px) {
+  .card {
+    max-width: 90%; /* Adjust width for tablet devices */
+  }
+}
+
+

@@ -31,8 +31,10 @@ This is a simple weather app that allows users to check the current weather cond
    git clone https://github.com/your-username/weather-app.git
    
 2. **Install dependencies**: Navigate to the project directory and install the necessary dependencies by running:
+
 cd weather-app
 npm install
+
 
 3. **Start the development server**: Launch the development server to run the app locally. Execute the following command:
 

@@ -31,7 +31,6 @@ function App() {
     useEffect(() => {
       const getGeolocationCityName = async () => {
         try {
-          // Get user's geolocation coordinates
           navigator.geolocation.getCurrentPosition(async (position) => {
             const { latitude, longitude } = position.coords;
             // Fetch city name based on geolocation coordinates using reverse geocoding
